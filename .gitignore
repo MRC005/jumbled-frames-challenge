@@ -1,0 +1,9 @@
+frames/
+*.npy
+*.mp4
+__pycache__/
+.DS_Store
+metadata.txt
+frame_order.txt
+.vscode/
+*.pyc
