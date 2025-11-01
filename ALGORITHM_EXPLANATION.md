@@ -106,6 +106,16 @@ Reconstruct the correct sequential order of 300 jumbled video frames from a 10-s
 **Challenge 3**: Avoiding local optima
 - **Solution**: Try multiple starting points, pick best sequence
 
+## Output
+
+The pipeline generates a single output file: `reconstructed_video.mp4`
+
+This video represents the reconstructed sequence with optimal temporal continuity. 
+Since the similarity-based approach can find both forward and backward sequences, 
+the algorithm automatically selects the direction that produces natural forward motion.
+
+**Output file:** `reconstructed_video.mp4` (1920x1080, 30 FPS, ~10 seconds)
+
 ## Conclusion
 
 This solution successfully reconstructs jumbled video frames using computer vision techniques. The greedy algorithm with SIFT features proved effective, achieving a high similarity score and producing smooth, natural-looking video output.
